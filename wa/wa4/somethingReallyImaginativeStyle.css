@@ -1,0 +1,118 @@
+/* General page styles */
+
+/* test rulsets 
+    p {
+        color:aquamarine;
+    }
+    header {
+        font-size: large;
+        font-style: oblique;
+    }
+*/
+
+body {
+    margin: 0;
+}
+  
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+}
+  
+
+/* card container styles */
+.card { 
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red; /* fixed error */
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+}
+  .card article{
+    height: 12em;
+    background-color: rgba(0,0,0,0.3);
+}
+  .card article p {
+    color: white;
+    padding: 1em;
+}
+/* header and footer styles */
+.card header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+}
+.card footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em; /*em is times ur font size*/
+}
+.card header, .card footer {
+    height: 3em; /*30px*/
+    padding: 1em; /*10px all sides*/
+    /*30+10+10=50 height*/
+}
+.card h2, .card p {
+    margin: 0;
+}
+.card footer p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.card h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+/* main business card content styles */
+.card article img {
+    max-height: 100%; /* fixed error */
+    float: right;
+}
+/* use class for second card */
+/* card container styles */
+.myCard { 
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: pink; /* fixed error */
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+}
+  .myCard article{
+    height: 12em;
+    background-color: rgba(163, 15, 49, 0.3);
+}
+  .myCard article p {
+    color: white;
+    padding: 1em;
+}
+/* header and footer styles */
+.myCard header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+}
+.myCard footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em; /*em is times ur font size*/
+}
+.myCard header, .myCard footer {
+    height: 3em; /*30px*/
+    padding: 1em; /*10px all sides*/
+    /*30+10+10=50 height*/
+}
+.myCard h2, .myCard p {
+    margin: 0;
+}
+.myCard footer p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.myCard h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+/* main business card content styles */
+.myCard article img {
+    max-height: 100%; /* fixed error */
+    float: right;
+}
