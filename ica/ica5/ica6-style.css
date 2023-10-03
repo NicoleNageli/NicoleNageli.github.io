@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    background-image:url('bottom-image.png');
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to bottom, rgb(122, 122, 122), rgba(255, 255, 255, 0));
+    */
+    
+  }
+  
+  html {
+    font-family: sans-serif;
+    
+  }
+  
+  body {
+    margin: 0;
+    background: #ccc;
+    background-image:url('bottom-image.png');
+    background-repeat: no-repeat;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    background-image:url('top-image.png');
+    background-repeat: no-repeat;
+    background-color:white;
+    border-top: 1mm solid red;
+    border-bottom: 1mm solid red;
+    background: linear-gradient(rgb(193, 193, 193), white);
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+    background-image:url('bottom-image.png');
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-image: url('logo.png');
+    
+  }
+  
+  /* Your CSS below here */
+  /*background-image:url('bottom-image.png');
+    background-repeat: no-repeat;
+still dont really know how to make bottom image go to the bottom?*/
+  /**
+  .topImage {
+    position:absolute;
+    top: 10px;
+  }
+
+  .logoImage {
+
+  }
+
+  .bottomImage {
+    position:absolute;
+    bottom: 10px;
+  } **/
