@@ -1,0 +1,11 @@
+.overlay {
+    position: relative;
+  }
+  
+  .sport {
+    position: relative;
+  }
+  
+  .score {
+    position: absolute;
+  }
