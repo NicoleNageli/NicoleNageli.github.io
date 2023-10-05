@@ -1,3 +1,11 @@
+body {
+  width:820px;
+  height:461px;
+ /* display: flex;
+  align-items:center;
+  justify-content:center;
+  */
+}
 .overlay {
     position: relative;
   }
@@ -8,4 +16,9 @@
   
   .score {
     position: absolute;
+    bottom:-150px;
+    right:-400px;
+    /*top:-80px;  */
+    max-width: 70%;
+    max-height: 70%;
   }
