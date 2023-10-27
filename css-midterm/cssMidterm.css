@@ -1,8 +1,8 @@
 
 body {
     font-family: 'Trebuchet MS','Poppins', sans-serif;
-    background-color: #EDC95A;
-    color: #000000;
+    background-color: #f4f1de;
+    color: #3d405b;
 }
 
 h1 {
@@ -85,14 +85,14 @@ p {
     margin-left: 150px;
     font-size:3em;
     color:#124769;
-    background-color: #f4f1bb;
+    background-color: #ffffff;
 }
 
 .event-name2 {
     text-align: left;
     margin-left: 150px;
     font-size:3em;
-    color:#f4f1bb;
+    color:#ffffff;
     background-color: #124769;
 }
 .event-name3 {
@@ -113,7 +113,7 @@ p {
     text-align: left;
     margin-left: 150px;
     font-size:3em;
-    color:#f4f1bb;
+    color:#ffffff;
     background-color: #124769;
 }
 .event-name6 {
@@ -128,13 +128,13 @@ p {
     margin-left: 150px;
     font-size:3em;
     color:#124769;
-    background-color: #f4f1bb;
+    background-color: #ffffff;
 }
 .event-name8 {
     text-align: left;
     margin-left: 150px;
     font-size:3em;
-    color:#f4f1bb;
+    color:#ffffff;
     background-color: #124769;
 }
 .event-name9 {
