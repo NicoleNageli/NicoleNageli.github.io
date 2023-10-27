@@ -116,7 +116,34 @@ p {
     color:#f4f1bb;
     background-color: #124769;
 }
-
+.event-name6 {
+    text-align: left;
+    margin-left: 150px;
+    font-size:3em;
+    color:#124769;
+    background-color: #9bc1bc;
+}
+.event-name7 {
+    text-align: left;
+    margin-left: 150px;
+    font-size:3em;
+    color:#124769;
+    background-color: #f4f1bb;
+}
+.event-name8 {
+    text-align: left;
+    margin-left: 150px;
+    font-size:3em;
+    color:#f4f1bb;
+    background-color: #124769;
+}
+.event-name9 {
+    text-align: left;
+    margin-left: 150px;
+    font-size:3em;
+    color:#124769;
+    background-color: #9bc1bc;
+}
 
 /*END event slides*/
 
