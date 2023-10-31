@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 2px solid rgb(144, 189, 144);
+
+        }
+    </style>
+</head>
+<body>
+        <button type="button">Player 1</button>
+        <button id = "press" type="button">Press me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--put script at bottom of body-->
+        <script>
+            //variable defines using 'const' or 'let', let can change, const you can assign once and never change it
+            const button = document.querySelector("button"); //querySelector only looks for first instant of button element, the player 1 button, not the press me-- fix by making unique button
+            //from html, look for button, querySelector says look for element
+            const press = document.getElementByID("press");
+
+
+            //look for event, the click 
+            //on button, listen for this event and what to do when it sees event happening
+            button.addEventListener('click', updateName);
+            press.addEventListener('click', updateName);
+
+            //define function
+            function updateName() {
+                //change name of button, dialogue box pops up
+                //let name = prompt("enter a new name"); //doesnt matter whether use let or const here
+                //change text in button
+
+                let name = 10;
+                console.log("the function ran correctly");
+                console.log(name);
+                //button.textContent = `Player 1: ${name}`;//change whatever's after = sign in html button, ${ concatinate variable name in there
+                press.innerHTML = `<h1>Hello!</h1>`;
+            }
+        </script>
+</body>
+</html>

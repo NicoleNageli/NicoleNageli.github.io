@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="try">Crazy?</button> 
+    <h1 id="text"></h1> 
+    <h2 id = "hover">They locked me in a room.</h2>
+    <b id="effect"></b>
+
+
+
+
+    <script> 
+    document.getElementById("try").addEventListener("click", function(){ 
+    document.getElementById("text").innerText = "I was crazy once..."; }); 
+
+    const y = document.getElementById("hover"); 
+    y.addEventListener("mouseover", RespondMouseOver); 
+    y.addEventListener("mouseout", RespondMouseOut); 
+    y.addEventListener("mousemove", RespondMouseMove);
+
+    function RespondMouseOver() { 
+            document.getElementById("effect").innerHTML += 
+                       "A rubber room." + "<br>"; 
+        } 
+          
+        function RespondMouseOut() { 
+            document.getElementById("effect").innerHTML += 
+                      "A rubber room with rats." + "<br>"; 
+        }
+        
+    function RespondMouseMove() {
+        document.getElementById("effect").innerHTML += 
+                      "Rats make me crazy." + "<br>"; 
+    }
+    </script> 
+
+</body>
+</html>
+<!--two different event listeners-->
