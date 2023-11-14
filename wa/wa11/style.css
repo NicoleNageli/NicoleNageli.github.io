@@ -11,16 +11,16 @@ body {
 .full-img {
   position: relative;
   display: block;
-  width: 640px;
-  height: 480px;
+  width: 641px;
+  height: 481px;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 640px;
-  height: 480px;
+  width: 641px;
+  height: 481px;
   background-color: rgba(0,0,0,0);
 }
 
@@ -37,7 +37,7 @@ button {
 
 .thumb-bar img {
   display: block;
-  width: 20%;
+  width: 21%;
   float: left;
   cursor: pointer;
 }
