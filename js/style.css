@@ -29,3 +29,13 @@ p /*this is where put number? me thinks yuh*/
     pointer-events: none;
     background: radial-gradient(circle at var(--x) var(--y), transparent 0.1%, rgba(0,0,0,0.95) 5%);
 }
+/*maybe make a canvas??? wait but i kinda have the info in the body, ya nvm
+canvas {
+        	background-color: black;
+        	width: 600px;
+        	height: 400px;
+        	position: absolute;
+        	top: 20%;
+        	left: 20%;
+        }
+*/
