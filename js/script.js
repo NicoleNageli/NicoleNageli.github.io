@@ -7,7 +7,53 @@ pos.addEventListener('mousemove', e=>
 //button time bb
 const button = document.getElementById('button');
 //if button clicked:
-button.addEventListener('click', () => alert('1 clicked'/*add code to add number to phone number here*/))
+//button.addEventListener('click', () => alert('1 clicked'/*add code to add number to phone number here*/))
+            let x = 0;
+            let y = 0;
+            let xSpeed = 2;
+            let ySpeed = 2;
+         function animate() {
+            x += xSpeed;
+            y += ySpeed;
+            if (x + 50 > window.innerWidth || x < 0) {
+               xSpeed = -xSpeed;
+            }
+            if (y + 50 > window.innerHeight || y < 0) {
+               ySpeed = -ySpeed;
+            }
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+            requestAnimationFrame(animate);
+         }
+        animate();
+   button.addEventListener('click', () => alert('ball clicked'))
+//add second event listener?
+/*
+button.addEventListener('mouseover',  () => {
+   button.style.left = Math.floor(Math.random() * (window.innerWidth +1)) + 'px';
+})
+/*
+button.addEventListener('mousemove',  () => {
+   let x = 0;
+   let y = 0;
+   let xSpeed = 5;
+   let ySpeed = 5;
+   function animate() {
+   x += xSpeed;
+   y += ySpeed;
+   if (x + 50 > window.innerWidth || x < 0) {
+      xSpeed = -xSpeed;
+   }
+   if (y + 50 > window.innerHeight || y < 0) {
+      ySpeed = -ySpeed;
+   }
+   button.style.left = x + "px";
+   button.style.top = y + "px";
+   requestAnimationFrame(animate);
+}
+animate();
+})
+*/
 
 //when the mouse moves, the button should move to a random place, how do i do that
 /*? https://www.geeksforgeeks.org/how-to-build-a-bounce-ball-with-html-and-javascript/
