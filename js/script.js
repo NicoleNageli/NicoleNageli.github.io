@@ -26,7 +26,13 @@ const button = document.getElementById('button');
             requestAnimationFrame(animate);
          }
         animate();
-   button.addEventListener('click', () => alert('ball clicked'))
+   button.addEventListener('click', () => alert('button clicked'))
+//add collision? nah too much work
+
+
+
+
+
 //add second event listener?
 /*
 button.addEventListener('mouseover',  () => {
