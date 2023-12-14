@@ -4,10 +4,10 @@ pos.addEventListener('mousemove', e=>
     pos.style.setProperty('--x', e.clientX + 'px')
     pos.style.setProperty('--y', e.clientY + 'px')
 })
+
 //button time bb
 const button = document.getElementById('button');
 //if button clicked:
-//button.addEventListener('click', () => alert('1 clicked'/*add code to add number to phone number here*/))
             let x = 0;
             let y = 0;
             let xSpeed = 2;
@@ -27,12 +27,27 @@ const button = document.getElementById('button');
          }
         animate();
    button.addEventListener('click', () => alert('button clicked'))
+
+   function storeVar(el)
+      {
+         var amount = el.getAttribute('value');
+         console.log(amount);
+      }
+   //now to add numbers to phone number with 10 digits (& display on screen)
+   //also for each button -- each button should move and be clicked
+   /* make a class called button to call when making a new button, pass in
+    what number the ball should display and connect to 
+    
+    then if length of phone number is 10, put a submit
+    but if length is bigger than 10, error message and clear number
+    */
+
+
+
+
+
 //add collision? nah too much work
-
-
-
-
-
+//___________________ I DID ITTTT disregard below _________________________________
 //add second event listener?
 /*
 button.addEventListener('mouseover',  () => {

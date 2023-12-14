@@ -2,8 +2,8 @@ body
 {
     position: relative;
     min-height: 100vh;
-   background: black; 
-   /*background: white;*/
+   /*background: black; */
+   background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ p /*this is where put number? me thinks yuh*/
     cursor: default;
 }
 
+/*
 .light
 {
     position:fixed;
@@ -31,6 +32,7 @@ p /*this is where put number? me thinks yuh*/
     pointer-events: none;
     background: radial-gradient(circle at var(--x) var(--y), transparent 0.1%, rgba(0,0,0,0.95) 5%);
 }
+*/
 
 #button {
     width: 50px;
