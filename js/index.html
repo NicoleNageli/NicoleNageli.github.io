@@ -9,12 +9,20 @@
 <body>
 
         <h1>What's your number?</h1>
-        <p>hello? anyone?</p>
+        <input type="text" id="result">
+        <input type="button" value="clear" onclick="clr()" />
+        <!--<p>hello? anyone?</p> -->
 
-        <button id="button">1</button>
+        
+        
+
+        <button id="button" onclick="storeVar(this)" value="1">1</button>
         <button id="button" onclick="storeVar(this)" value="2">2</button>
+
+        <!--<button id="button" value="c" onclick="clr()" />
+<button id="button" value="3" onclick="dis('3')"onkeydown="myFunction(event)">-->
  
-    <!--<div class = "light"></div>-->
+    <div class = "light"></div>
 
 <script src="script.js"></script> <!--external js link-->
 </body>
@@ -77,12 +85,47 @@ stop after 10th number clicked, or unclickable button if less than 10 numbers in
 clear/reset button
 
 made the button move and click, turned off light for now
-make all the buttons
-save clicks to phone number
-clear button etc
+
+- make all the buttons move & associate with a number
+- save clicks to phone number
+- check if phone number is more than 10 digits and put submit button if true
+- clear button
+
 
 12/13
 turn off light for now
 save clicks to phone number howdothat
 and stop after 10 numbers entered
+
+k adding another button and assigning a value worked but now how do i save that value 
+and also that button is not moving...
+for button click value also clear button:
+https://www.geeksforgeeks.org/javascript-calculator/
+onclick display 1 for phone number
+function to display value
+
+HTML
+<input type="button" value="c" onclick="clr()" />
+<input type="button" value="3" onclick="dis('3')"onkeydown="myFunction(event)">
+JS
+function dis(val) { 
+            document.getElementById("result").value += val 
+        } 
+
+function myFunction(event) { 
+            if (event.key == '0' || event.key == '1' 
+                || event.key == '2' || event.key == '3' 
+                || event.key == '4' || event.key == '5' 
+                || event.key == '6' || event.key == '7' 
+                || event.key == '8' || event.key == '9' 
+                || event.key == '+' || event.key == '-' 
+                || event.key == '*' || event.key == '/') 
+                document.getElementById("result").value += event.key; 
+// Function that clear the display 
+        function clr() { 
+            document.getElementById("result").value = "" 
+        } 
+
+12/14
+helppppp help meeee
 -->

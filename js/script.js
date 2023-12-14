@@ -7,32 +7,79 @@ pos.addEventListener('mousemove', e=>
 
 //button time bb
 const button = document.getElementById('button');
-//if button clicked:
-            let x = 0;
-            let y = 0;
-            let xSpeed = 2;
-            let ySpeed = 2;
-         function animate() {
-            x += xSpeed;
-            y += ySpeed;
-            if (x + 50 > window.innerWidth || x < 0) {
-               xSpeed = -xSpeed;
-            }
-            if (y + 50 > window.innerHeight || y < 0) {
-               ySpeed = -ySpeed;
-            }
-            button.style.left = x + "px";
-            button.style.top = y + "px";
-            requestAnimationFrame(animate);
-         }
-        animate();
+//document.querySelectorAll('.button').forEach(function(item){
+   let x = 0;
+   let y = 0;
+   let xSpeed = 2;
+   let ySpeed = 2;
+function animate() {
+   x += xSpeed;
+   y += ySpeed;
+   if (x + 50 > window.innerWidth || x < 0) {
+      xSpeed = -xSpeed;
+   }
+   if (y + 50 > window.innerHeight || y < 0) {
+      ySpeed = -ySpeed;
+   }
+   button.style.left = x + "px";
+   button.style.top = y + "px";
+   requestAnimationFrame(animate);
+}
+animate();
+//});
+           
    button.addEventListener('click', () => alert('button clicked'))
 
+
+
+//combine bottom two functions? to display phone number
    function storeVar(el)
       {
          var amount = el.getAttribute('value');
          console.log(amount);
       }
+
+function display(){
+   //should 'add' values next to each other & display
+   document.getElementById("result").value += val 
+}
+function myFunction(event) { 
+   if (event.key == '0' || event.key == '1' 
+       || event.key == '2' || event.key == '3' 
+       || event.key == '4' || event.key == '5' 
+       || event.key == '6' || event.key == '7' 
+       || event.key == '8' || event.key == '9' 
+       || event.key == '+' || event.key == '-' 
+       || event.key == '*' || event.key == '/') 
+       document.getElementById("result").value += event.key; 
+}
+// Function that clear the display 
+function clr() { 
+   document.getElementById("result").value = "" 
+} 
+/* this dont work yetttttt ahhhh
+      function dis(val) { 
+         document.getElementById("result").value += val 
+     } 
+
+function myFunction(event) { 
+         if (event.key == '0' || event.key == '1' 
+             || event.key == '2' || event.key == '3' 
+             || event.key == '4' || event.key == '5' 
+             || event.key == '6' || event.key == '7' 
+             || event.key == '8' || event.key == '9' 
+             || event.key == '+' || event.key == '-' 
+             || event.key == '*' || event.key == '/') 
+             document.getElementById("result").value += event.key; 
+}
+// Function that clear the display 
+     function clr() { 
+         document.getElementById("result").value = "" 
+     } 
+*/
+
+
+
    //now to add numbers to phone number with 10 digits (& display on screen)
    //also for each button -- each button should move and be clicked
    /* make a class called button to call when making a new button, pass in
@@ -118,6 +165,3 @@ button.addEventListener('mousemove', () => {
     button.style.left = Math.floor(Math.random() * maxWidth + 1)+'px';
 })
 */
-
-
-
