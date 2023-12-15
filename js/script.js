@@ -6,8 +6,8 @@ pos.addEventListener('mousemove', e=>
 })
 
 //button time bb
-const button = document.getElementById('button');
-//document.querySelectorAll('.button').forEach(function(item){
+const button1 = document.getElementById('button');
+//const buttons = document.querySelectorAll('.button');
    let x = 0;
    let y = 0;
    let xSpeed = 2;
@@ -26,12 +26,43 @@ function animate() {
    requestAnimationFrame(animate);
 }
 animate();
-//});
+
+
+const button2 = document.getElementById('button');
+   let x2 = 0;
+   let y2 = 0;
+   let xSpeed2 = 2;
+   let ySpeed2 = 2;
+function animate2() {
+   x2 += xSpeed2;
+   y2 += ySpeed2;
+   if (x + 50 > window.innerWidth || x < 0) {
+      xSpeed2 = -xSpeed2;
+   }
+   if (y + 50 > window.innerHeight || y < 0) {
+      ySpeed2 = -ySpeed2;
+   }
+   button2.style.left = x + "px";
+   button2.style.top = y + "px";
+   requestAnimationFrame(animate);
+}
+animate();
+
            
    button.addEventListener('click', () => alert('button clicked'))
 
+let phoneNumber='';
+let result='';
+function incrementString(phoneNumber){
+   if (result.length === 3){
+      result+= '-';
+   }
+   else {
+      result+=phoneNumber;
+   }
+}
 
-
+/*
 //combine bottom two functions? to display phone number
    function storeVar(el)
       {
