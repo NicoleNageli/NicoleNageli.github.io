@@ -5,6 +5,84 @@ pos.addEventListener('mousemove', e=>
     pos.style.setProperty('--y', e.clientY + 'px')
 })
 
+const buttons = document.querySelectorAll('button');
+const width = window.innerWidth || document.documentElement.clientWidth;
+const height = window.innerHeight || document.documentElement.clientHeight;
+const body = document.querySelector('body');
+
+let str = "";
+
+function animate(){
+  buttons.forEach(button => {
+    let x = parseInt(button.getAttribute('xpos'));
+    let y = parseInt(button.getAttribute('ypos'));
+    let xVel = parseInt(button.getAttribute('xvel'));
+    let yVel = parseInt(button.getAttribute('yvel'));
+    if(x > width || x < 0){
+      xVel = -xVel;
+      button.setAttribute("xvel", xVel);
+    } 
+    if(y > height || y < 0){
+      yVel = -yVel;
+      button.setAttribute("yvel", yVel);
+    }
+    x += xVel;
+    y += yVel;
+    button.style.left = x + 'px';
+    button.style.top = y + 'px';
+    button.setAttribute("xpos", x);
+    button.setAttribute("ypos", y);
+  });
+  requestAnimationFrame(animate);
+}
+animate();
+
+body.addEventListener('click', (e) => {
+  //console.log(e.target.id);
+  if(e.target.id !== 'container'){
+    str += e.target.id;
+  } 
+  if(e.target.id == 'clear'){
+    str = "";
+    p.textContent = str;
+  }
+  //console.log(str);
+  //print out string phone number display
+ document.getElementById("phoneNumber").innerHTML = `Your phone number: ${str}`;
+ 
+
+ if (str.length == 10){
+   //submit button but do we NEED that? how bout an alert?
+   alert("The phone number you entered was "+ str + 
+   ". Hopefully that's right. If not, whateva, find that pesky clear button & try again! Better luck next time >:)");
+ }
+});
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //button time bb
 const button1 = document.getElementById('button');
 //const buttons = document.querySelectorAll('.button');
@@ -25,31 +103,9 @@ function animate() {
    button.style.top = y + "px";
    requestAnimationFrame(animate);
 }
-animate();
-
-
-const button2 = document.getElementById('button');
-   let x2 = 0;
-   let y2 = 0;
-   let xSpeed2 = 2;
-   let ySpeed2 = 2;
-function animate2() {
-   x2 += xSpeed2;
-   y2 += ySpeed2;
-   if (x + 50 > window.innerWidth || x < 0) {
-      xSpeed2 = -xSpeed2;
-   }
-   if (y + 50 > window.innerHeight || y < 0) {
-      ySpeed2 = -ySpeed2;
-   }
-   button2.style.left = x + "px";
-   button2.style.top = y + "px";
-   requestAnimationFrame(animate);
-}
-animate();
-
+animate(); 
            
-   button.addEventListener('click', () => alert('button clicked'))
+button.addEventListener('click', () => alert('button clicked'))
 
 let phoneNumber='';
 let result='';
@@ -62,7 +118,7 @@ function incrementString(phoneNumber){
    }
 }
 
-/*
+
 //combine bottom two functions? to display phone number
    function storeVar(el)
       {

@@ -3,32 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What's Ya Numba?</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body id="container">
         <h1>What's your number?</h1>
-        <!--<input type="text" id="result"> -->
+        <p id = "phoneNumber">Your phone number: </p>
+        <button xpos="100" ypos="100" xvel="1" yvel="3" id="1">1</button>
+       <button xpos="10" ypos="200" xvel="2" yvel="2" id="2">2</button>
+       <button xpos="50" ypos="150" xvel="-2" yvel="1" id="3">3</button>
+       <button xpos="200" ypos="300" xvel="3" yvel="2" id="4">4</button>
+       <button xpos="150" ypos="100" xvel="3" yvel="3" id="5">5</button>
+       <button xpos="15" ypos="105" xvel="1" yvel="4" id="6">6</button>
+       <button xpos="5" ypos="3" xvel="4" yvel="2" id="7">7</button>
+       <button xpos="100" ypos="600" xvel="7" yvel="1" id="8">8</button>
+       <button xpos="50" ypos="100" xvel="3" yvel="1" id="9">9</button>
+       <button xpos="500" ypos="300" xvel="1" yvel="4" id="0">0</button>
+
+       <button xpos="200" ypos="300" xvel="5" yvel="3" id="clear">clear</button>
+
+      
+    <div class = "light"></div>
+    
+
+<script src="script.js"></script> <!--external js link-->
+</body>
+</html>
+
+<!--    <input type="text" id="result">
         <input type="button" value="clear" onclick="clr()" />
-        <!--<p>hello? anyone?</p> -->
+        <p>hello? anyone?</p> 
 
         
         <button id="button1" value="1">1</button>
         <button id="button2" value="2">2</button>
-<!--
+
         <button id="button" onclick="storeVar(this)" value="1">1</button>
         <button id="button" onclick="storeVar(this)" value="2">2</button>
 -->
 
         <!--<button id="button" value="c" onclick="clr()" />
 <button id="button" value="3" onclick="dis('3')"onkeydown="myFunction(event)">-->
- 
-    <div class = "light"></div>
-
-<script src="script.js"></script> <!--external js link-->
-</body>
-</html>
 <!-- https://github.com/Jack-Manning11/Jack-Manning11.github.io/tree/Current-Codebase/Bouncing-Buttons
 BRAINSTORMING
 what if right to left numbers
@@ -130,4 +145,11 @@ function myFunction(event) {
 
 12/14
 helppppp help meeee
+whoo i got help tysm
+- make all the buttons move & associate with a number = DONE
+- clear button = DONE
+- save clicks to phone number = DONE
+for some reason, the phone number id paragraph element was also printing 
+phoneNumber' when clicked, so I added css pointer-events: none and it worked!
+- check if phone number is more than 10 digits and put submit button if true = DONE
 -->
